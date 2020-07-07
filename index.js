@@ -41,8 +41,9 @@ bot.on('message', (ctx) => {
         // ctx.reply(`Погода: ${temp.weather[0].description}`)
         
     })
-    .catch(ctx.reply)
-
+    .catch(()=> {
+       ctx.reply("Упс такого города не найдено...")
+   })
 })
 
 
